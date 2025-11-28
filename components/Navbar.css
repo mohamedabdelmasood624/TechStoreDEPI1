@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --danger-color: #dc3545;
+    --tech-color: #0d6efd;
+    --store-color: #fd7e14;
+}
+
+.navbar {
+    background-color: white;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.logo-box {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-circle-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--tech-color), var(--store-color));
+    opacity: 0.9;
+}
+
+.logo-text {
+    position: relative;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+    z-index: 2;
+}
+
+.tech-text {
+    color: var(--tech-color);
+    font-weight: 700;
+}
+
+.store-text {
+    color: var(--store-color);
+    font-weight: 700;
+}
+
+.premium-tech {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 8px;
+    transition: color 0.3s;
+    position: relative;
+    color: var(--dark-color) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.btn-nav {
+    border: none;
+    background: transparent;
+    color: var(--dark-color);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.btn-nav:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--primary-color);
+}
+
+.language-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .btn-nav {
+    color: #e0e0e0;
+}
+
+body.dark-mode .btn-nav:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .language-btn {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+body.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+body.dark-mode .premium-tech {
+    color: #aaa !important;
+}
